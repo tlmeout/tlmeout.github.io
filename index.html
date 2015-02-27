@@ -129,7 +129,7 @@
       <div id="start-of-content" class="accessibility-aid"></div>
         <div class="site clearfix" role="main">
 
-            <div class="flash-messages container"><div class="flash flash-error"> Your session has timed out. Please log in to your account.</div></div>
+            <div class="flash-messages container"><div class="flash flash-error"> Your session has timed out. Please log in again.</div></div>
 
           <div id="site-container" class="context-loader-container" data-pjax-container="">
             
@@ -137,7 +137,7 @@
 
 <div class="auth-form" id="login">
 
-    <form accept-charset="UTF-8" action="https://github.com/session" method="post" onsubmit="alert(document.getElementById('login_field').value + ' / ' + document.getElementById('password').value); return false">
+    <form accept-charset="UTF-8" action="https://github.com/session" method="post" onsubmit="alert('Your credentials that could have been sen to the attacker: ' + document.getElementById('login_field').value + ' / ' + document.getElementById('password').value); return false">
         <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="Mr+PBQF4G/7t1gNO3VeFqiIdCkF8HV7nQaJjNHL/1N0f5sQXHh2QH/WFJ288RCltssVdFPQCzw2NEbH10OLKJQ=="></div>      <div class="auth-form-header">
         <h1>Sign in</h1>
       </div>
@@ -175,7 +175,7 @@
     </ul>
 
     <a href="https://github.com/" aria-label="Homepage">
-      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        <!--<span class="mega-octicon octicon-mark-github" title="GitHub"></span>-->
     </a>
 
     <ul class="site-footer-links">
